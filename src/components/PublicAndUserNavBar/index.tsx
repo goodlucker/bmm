@@ -166,7 +166,7 @@ export function PublicAndUserNavbar(props: Props) {
         />
       </NavbarMenu>
 
-      <div role="navigation" className="fixed left-full">
+      <div className="hidden" role="navigation" aria-hidden="false">
         {tags.map((tag) => (
           <a key={tag.id} {...getTagLinkAttrs(tag)}>
             {tag.name}
